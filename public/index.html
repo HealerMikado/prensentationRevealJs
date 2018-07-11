@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+>
+
+<title>Prensentation reveal.js</title>
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/mine.css">
+<link rel="stylesheet" href="css/theme/black_mine.css">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+	    : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section><h1>Reveal js</h1>
+				<h2>Un framework HTML pour faire vos présentations</h2></section>
+			<section>
+				<section><h2>Pourquoi utiliser reaveal js ?</h2></section>
+
+				<section>
+					<h3>Problèmes récurrents</h3>
+					<ul>
+						<li class="fragment">Absence de powerpoint/LibreOffice sur
+							le poste client</li>
+						<li class="fragment">Présentation déformées à cause de la
+							config du poste client</li>
+						<li class="fragment">Mince ! J'ai oublié ma clef ...</li>
+						<li class="fragment">Je trouve les Beamers moche</li>
+				</ul>
+			</section>
+
+				<section>
+					<h3>Avantage de reveal.js</h3>
+					<ul>
+						<li class="fragment">Simplicité</li>
+						<li class="fragment">Multiplateforme (tous sauf IE&gt;9 ou
+							navigateurs sans js)</li>
+						<li class="fragment">Accessible depuis le web</li>
+						<li class="fragment">C'est quand même plus <b>simple</b> et
+							<b>beau</b> qu'un Beamer
+					</li>
+				</ul>
+			</section>
+
+
+
+		</section>
+			<section>
+				<section>
+					<h2>Installation</h2>
+			</section>
+				<section>
+					<ol>
+						<li class="fragment">Télécharger la dernière <a
+							href="https://github.com/hakimel/reveal.js/"
+						>version</a>
+					</li>
+						<li class="fragment">Unzip</li>
+						<li class="fragment">Modifier le index.html</li>
+						<li class="fragment"><b>Enjoy</b></li>
+				</ol>
+			</section>
+
+				<section>
+					<h3>Mais encore</h3>
+					<ul>
+						<li class="fragment">Beaucoup d'options déjà fournies</li>
+						<ul>
+							<li class="fragment">Theme</li>
+							<li class="fragment">Fragment</li>
+							<li class="fragment">Colorisation du code ...</li>
+							<li class="fragment">etc ...</li>
+					</ul>
+						<li class="fragment">Mais vous pouvez faire les votres ! ->
+							CSS/JS</li>
+						<li class="fragment">Avec Emmet (cf il y a longtemps)
+							écrire votre présentation est rapide</li>
+						<li class="fragment">Et on peut la mettre en ligne sur
+							github/gitlab</li>
+				</ul>
+			</section>
+
+
+		</section>
+			<section>
+				<section>
+					<h2>Rapidement ce que l'on peut faire</h2>
+			</section>
+				<section><h3>Fragement</h3> <span class="fragment">C'est
+						ce que</span> <span class="fragment"> je fais depuis le début.</span> <br />
+					<span class="fragment">Seulement besoin de rajouter la
+						classe <b>fragment</b>
+				</span></section>
+
+				<section>
+					<h3>Un peu de CSS</h3>
+					<ul>
+						<li class="red fragment ">Texte en bleu</li>
+						<li class="green fragment ">Texte en rouge</li>
+						<li class="blue fragment">Texte en vert</li>
+						<li class="important fragment ">Ou l'inverse ?</li>
+				</ul>
+			</section>
+				<section>
+					<h3>Un peu de code</h3> <pre><code data-trim data-noescape>
+						public class CelluleFactory {
+							private static CelluleFactory INSTANCE;
+							private Map &lt;String , ICellule&gt; mapCellule;
+							public static CelluleFactory getInstance() {
+								if (INSTANCE == null) {
+									INSTANCE = new CelluleFactory();
+								}
+								return INSTANCE;
+							}
+						}
+					</code></pre>
+
+					<p>Pensez à échapper les &lt; et &gt;, et plus globalement le
+						html et le css ;)</p>
+			</section>
+
+
+				<section data-markdown><textarea data-template>
+## Vous pouvez faire du markdown
+
+  On dirait pas comme ça, mais je vous assure que c'est du md
+	 						
+  - une liste en md
+	 						
+    * une sous liste
+	 						  
+    * blablabla
+	 						  
+  - On s'amuse ...
+	 						
+</textarea></section>
+
+				<section>
+					<h3>On peut faire aussi des tableaux</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Jeu</th>
+								<th>Prix</th>
+								<th>Notation</th>
+						</tr>
+					</thead>
+						<tbody>
+							<tr>
+								<td>King of tokyo</td>
+								<td>25€</td>
+								<td>Godzilla/20</td>
+						</tr>
+							<tr>
+								<td>Arkans</td>
+								<td>??</td>
+								<td>Trop long/20</td>
+						</tr>
+							<tr>
+								<td>...</td>
+								<td>...</td>
+								<td>...</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+				<section><h3>Et plein d'autres choses !!</h3>
+					<ul>
+						<li class="fragment">Mettre une images en fond</li>
+						<li class="fragment">Changer les transitions</li>
+						<li class="fragment">Lire une vidéo</li>
+						<li class="fragment">Mais bon souvent rester sobre c'est le
+							mieux</li>
+				</ul></section>
+		</section>
+
+
+			<section>
+				<section>
+					<h2>La mise en ligne</h2>
+			</section>
+
+				<section>
+					<h3>Step 1 : configurer sa présentation</h3>
+					<ol><li>Mettre la présentation dans un dossier public</li>
+						<li>A la racine du projet rajouter un fichier
+							.gitlab-ci.yml</li></ol>
+			</section>
+
+				<section>
+					<h3>.gitlab-ci.yml</h3> <pre><code data-trim data-noescape>
+pages:
+  stage: deploy
+  tags:
+  - shell
+  script:
+  - echo 'Deploy to Gitlab pages'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+					</code></pre>
+			</section>
+
+				<section>
+					<h3>Step 2 : Se faire un repot sous gitlab</h3>
+
+			</section>
+
+				<section>
+					<h3>Step 3 : Commit</h3>
+			</section>
+
+				<section>
+					<h3>Step 4 : Done</h3>
+			</section>
+
+				<section>
+					<h2 class="red">C'est pas plus compliqué que ça :)</h2>
+			</section>
+		</section>
+
+			<section>
+				<section>
+					<h2>Pour aller plus loin</h2>
+			</section>
+
+				<section>
+					<ul>
+						<li><a href="https://github.com/hakimel/reveal.js">Github
+								du projet </a></li>
+						<li>Et regardez le fichier demo.html qui est 1000x plus
+							complet que ça</li>
+				</ul>
+			</section>
+
+		</section>
+			<section>
+				<h2>Et maintenant <a href="https://insee.codebashing.com/">codebashing</a></h2>
+		</section>
+
+	</div>
+</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+	// More info about config & dependencies:
+	// - https://github.com/hakimel/reveal.js#configuration
+	// - https://github.com/hakimel/reveal.js#dependencies
+	Reveal.initialize({
+	    dependencies : [ {
+		src : 'plugin/markdown/marked.js'
+	    }, {
+		src : 'plugin/markdown/markdown.js'
+	    }, {
+		src : 'plugin/notes/notes.js',
+		async : true
+	    }, {
+		src : 'plugin/highlight/highlight.js',
+
+		callback : function() {
+		    hljs.initHighlightingOnLoad();
+		}
+	    } ],
+	async : true,
+	history: true,
+	mouseWheel: true,
+	slideNumber: true,
+	controls: false,
+	
+	});
+    </script>
+</body>
+</html>
