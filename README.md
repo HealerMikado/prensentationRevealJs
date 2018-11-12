@@ -54,7 +54,7 @@ Pour faire le titre de la slide vous avez à votre disposition les balises h1, h
 2. h2 : titre d'une partie
 3. h3 : titre d'une slide
 
-Exemple : 
+Exemple :
 
 ```HTML
 <section>
@@ -84,7 +84,34 @@ Exemple :
 </section>
 ```
 
-### Les listes
+#### Les paragraphes
+
+```HTML
+<p> mon super paragraphe </p>
+<p> mon paragraphe trop bien </p>
+```
+
+ou sans balise et en sautant des lignes.
+
+```HTML
+ mon super paragraphe 
+
+ mon paragraphe trop bien
+```
+
+Pour du text en gras :
+
+```HTML
+<b> important </b>
+```
+
+Pour du text en italique :
+
+```HTML
+<em> important </em>
+```
+
+#### Les listes
 
 C'est comme les listes en html. On peut faire des listes ordonnées (ol>li) ou non ordonnées (ul>li)
 
@@ -106,4 +133,41 @@ C'est comme les listes en html. On peut faire des listes ordonnées (ol>li) ou n
     <li> elem 4</li>
     <li> elem 5</li>
 </ul>
+```
+
+#### Les tableaux
+
+```HTML
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Value</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Apples</td>
+            <td>$1</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Lemonade</td>
+            <td>$2</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Bread</td>
+            <td>$3</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+#### Les images
+
+```HTML
+<img src="chemin/vers/image" alt="" class="plain"/>
 ```
